@@ -18,7 +18,7 @@
       referrerpolicy="no-referrer"
     />
 
-    <title>Zadanie domowe nr:4</title>
+    <title>Zadanie domowe nr:5</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -63,7 +63,7 @@
           <h1 class="title__section__h1">
             EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
           </h1>
-          <button class="title__section__button" type="button">
+          <button type="button" class="title__section__button" data-modal-open>
             Zamów usługe
           </button>
         </div>
@@ -129,25 +129,22 @@
           <h2 class="what__we__do__h2">Czym się zajmujemy</h2>
           <ul class="what__we__do__list">
             <li class="wwd__list">
-              <img
-                src="images/GoIT1.jpg"
-                alt="Praca pszy komputerze"
-                width="370"
-              />
+              <div class="wwd__list__box">
+                <img src="images/GoIT1.jpg" alt="Praca pszy komputerze" />
+                <p class="wwd__list__p">APLIKACJE KOMPUTEROWE</p>
+              </div>
             </li>
             <li class="wwd__list">
-              <img
-                src="images/GoIT2.jpg"
-                alt="Praca pszy tablecie"
-                width="370"
-              />
+              <div class="wwd__list__box">
+                <img src="images/GoIT2.jpg" alt="Praca pszy tablecie" />
+                <p class="wwd__list__p">ROZWIĄZANIA GRAFICZNE</p>
+              </div>
             </li>
             <li class="wwd__list">
-              <img
-                src="images/GoIT3.jpg"
-                alt="Praca pszy Telefonie"
-                width="370"
-              />
+              <div class="wwd__list__box">
+                <img src="images/GoIT3.jpg" alt="Praca pszy Telefonie" />
+                <p class="wwd__list__p">APLIKACJE MOBILNE</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -440,5 +437,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg width="11" height="11">
+            <use href="images/icons.svg#icon-close-black-18dp-2-1-1"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
